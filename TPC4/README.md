@@ -8,7 +8,7 @@ O objetivo é criar uma aplicação para a gestão de uma base de dados de compo
 
 2. Criar uma aplicação Web com as seguintes caraterísticas:
 
-    - CRUD sob re compositores;
+    - CRUD sobre compositores;
     - CRUD sobre periodos musicais.
 
 3. Investigar e inserir pelo menos 5 compositores do período moderno ou serialista.
