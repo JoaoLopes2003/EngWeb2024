@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  .w3-card-4
+    header.w3-container.w3-teal
+      h1
+        = titulo
+        span(style="margin-left: 10px;")
+          a.w3-btn.w3-round.w3-grey(href='/periodos/registo') +
+
+    br
+    .w3-container
+      table.w3-table-all
+        tr
+          th Nome
+          th Ações
+        each p in periodos
+          tr
+            td
+              a(href='/periodos/' + p.id)= p.nome
+            td
+              a(href='/periodos/edit/' + p.id) [Editar]
+              a(href='/periodos/delete/' + p.id) [Apagar]
+    br
+
+    footer.w3-container.w3-teal
+      address Gerado por EngWeb2024 em #{data}
