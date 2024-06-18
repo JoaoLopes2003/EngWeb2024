@@ -1,0 +1,68 @@
+extends layout
+
+block content
+  .w3-card-4
+    header.header-container.w3-teal
+      if (userRole == 'admin')
+        .container-admin-home
+          h1
+            = titulo
+            span(style="margin-left: 10px;")
+              a.w3-btn.w3-round.w3-grey(href='/registoTipoRecurso') +
+          .container-buttons-admin-home
+            button.button-download-database(type="button" id="downloadBtn")
+              b Exportar Tudo
+            form(action="/uploadDataBase" method="POST" enctype="multipart/form-data" id="form")
+              .import-all-section-container
+                button.button-download-database(type="button" id="uploadBtn")
+                  b Importar Tudo
+                input.input-import-all(type="file", name="zip", id="zip", required, accept=".zip")
+      else
+        h1
+          = titulo
+      .nav-bar-container
+        a(href='/users/' + username)
+          img.img-profile(src="/images/profile_icon.png" alt="Perfil")
+        .vertical-line
+        a.texto-nav-bar(href='/users/logout') Logout
+    
+    .info-tipo-container.w3-cyan.w3-card-4
+        .w3-container.w3-white.titulo-info-tipo
+            h2 Tipos de Recursos
+        table.w3-table-all
+            for tipo in tipos
+                tr
+                    td
+                        a.tipo-recurso-opcao(href='/recursos/' + tipo._id)= tipo._id
+            tr
+                td
+                    a.tipo-recurso-opcao(href='/recursos') Todos os Recursos
+    if (recursos.length > 0)
+      .notificacoes-container.w3-yellow.w3-card-4
+        .w3-container.w3-yellow.titulo-info-tipo
+          h2 Recursos Adicionados Recentemente
+        table.w3-table-all
+          tr
+            th Id
+            th Tipo
+            th Tema
+            th Titulo
+            th Subtítulo
+            th Autor
+          each r in recursos
+            tr
+              td
+                a(href=`/recursos/${r._id.replace('#', '%23')}`)= r._id
+              td
+                a(href='/recursos/' + r.tipo)= r.tipo
+              td= r.tema
+              td= r.titulo
+              td= r.subtitulo
+              td= r.autor
+    br
+
+    footer.w3-container.w3-teal.w3-center
+      address Gerado por EngWeb2024 em #{data}
+
+block scripts
+  script(src="/javascripts/homeAdminButtons.js")

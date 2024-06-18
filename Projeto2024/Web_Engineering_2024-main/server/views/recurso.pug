@@ -1,0 +1,100 @@
+extends layout
+
+block content
+  .w3-card-4
+    header.header-container.w3-teal
+      h1 #{recurso.titulo} - #{recurso._id}
+      .nav-bar-container
+        if (userRole == 'admin' || username == recurso.autor)
+          .resource-options-container
+            a(href='/recursos/edit/' + idRecurso) [Editar]
+            a(href='/recursos/delete/' + idRecurso) [Apagar]
+        .vertical-line-2
+        a.texto-nav-bar(href='/home') Home
+        .vertical-line-2
+        a.texto-nav-bar(href='/users/logout') Logout
+    br
+    .recurso-container
+        .info-recurso-container.w3-cyan.w3-card-4
+            .w3-container.w3-white.titulo-info-recurso
+                h2 Informações
+            table.w3-table-all
+                tr
+                    td Id:
+                    td #{recurso._id}
+                tr
+                    td Tipo:
+                    td #{recurso.tipo}
+                tr
+                    td Tema:
+                    td #{recurso.tema}
+                tr
+                    td Título:
+                    td #{recurso.titulo}
+                tr
+                    td Subtítulo:
+                    td #{recurso.subtitulo}
+                tr
+                    td Autor:
+                    td #{recurso.autor}
+                tr
+                    td Data de Criação:
+                    td= new Date(recurso.dataCriacao).toLocaleString('pt-PT', { year: 'numeric', month: '2-digit', day: '2-digit'})
+                tr
+                    td Data de Adição:
+                    td= new Date(recurso.dataRegisto).toLocaleString('pt-PT', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
+                tr
+                    td Visibilidade:
+                    td #{recurso.visibilidade}
+                tr
+                    td Classificação (0-5):
+                    if recurso.ranking.numero_avaliacoes == 0
+                        td Ainda não tem classificações
+                    else
+                        td= recurso.ranking.estrelas.toFixed(1)
+                tr
+                    td Número de Classificações:
+                    td #{recurso.ranking.numero_avaliacoes}
+            button.button-download-resource(type="button" id="downloadBtn" data-recurso-id=recurso._id data-title=recurso.titulo)
+                    b Descarregar Recurso
+        .comentarios-container-1
+            if (userRole == 'admin' || username != recurso.autor)  
+              .comentarios-container-2.w3-card-4
+                  .w3-container
+                      .w3-white.titulo-regista-comentario
+                          h2 Adicione um Comentário
+                  .w3-container
+                      form.comentario-form(action='/recursos/edit/' + idRecurso, method='post')
+                          .form-comentario-class
+                              label(for="estrelas") Classificação (0-5):
+                              input.select-option-box.classification-filter-box(type="number", name="estrelas", min="0", max="5", step="0.1", required)
+                          .form-comentario-comentario
+                              label(for="classificacao") Comentário:
+                              textarea.select-option-box.textarea-comentario(name="comentario", required)
+                              
+                          button.button-submit-comentario(type="submit") Adicionar Comentário
+              .comentarios-container-3.w3-card-4.w3-cyan
+                  .titulo-comenatarios-text Comentários
+            else
+              .comentarios-container-7.w3-card-4.w3-cyan
+                  .titulo-comenatarios-text Comentários
+            .comentarios-container-5
+                each c in recurso.comentarios
+                    .comentarios-container-4.w3-card-4
+                        .info-user
+                            .info-user-left
+                                .nome-user-comentario #{c.usuario}
+                                - if (c.data instanceof Date)
+                                    .data-comentario= c.data.toISOString().slice(0, 16).replace("T", " ")
+                            .info-user-right
+                                | Classificação:
+                                .classificacao-comentario #{c.classificacao}
+                        .comentario-text-container #{c.comentario}
+    br
+
+    footer.w3-container.w3-teal.w3-center
+      address Gerado por EngWeb2024 em #{data} - 
+        a(href='/recursos') [Voltar]
+
+block scripts
+  script(src="/javascripts/downloadFile.js")

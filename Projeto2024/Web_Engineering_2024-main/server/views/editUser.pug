@@ -1,0 +1,52 @@
+extends layout
+
+block content
+    .w3-card-4
+        header.header-container.w3-teal
+            h1 #{titulo}
+            .nav-bar-container
+                a.texto-nav-bar(href='/home') Home
+                .vertical-line-2
+                a.texto-nav-bar(href='/users/logout') Logout
+            
+        .w3-container
+            br
+            form.w3-container(action=`/users/edit/${username}` method="POST")
+                fieldset.w3-cyan
+                    legend
+                        b Dados do Utilizador
+                    .row-of-resource-data
+                        .resource-data-row
+                            label(for="username") Username:
+                            input.select-option-box(type="text", name="username", id="username", value=user._id, readonly)
+                        .resource-data-row
+                            label(for="nome") Nome:
+                            input.select-option-box(type="text", name="nome", id="nome", value=user.nome, required)
+                        .resource-data-row
+                            label(for="email") Email:
+                            input.select-option-box(type="email", name="email", id="email", value=user.email, required)
+                    .row-of-resource-data
+                        .resource-data-row
+                            label(for="cargo") Cargo:
+                            input.select-option-box(type="text", name="cargo", id="cargo", value=user.cargo, readonly)
+                        .resource-data-row
+                            label(for="dataRegisto") Data de Registo:
+                            - const formattedDate = user.dataRegisto.toISOString().split('T')[0];
+                            input.select-option-box(type="date", name="dataRegisto", value=formattedDate, readonly)
+                        .resource-data-row
+                            label(for="password-nova") Nova Password:
+                            input.select-option-box(type="password", name="passwordNova", id="password-nova")
+                        .resource-data-row
+                            label(for="password-nova-confirmacao") Confirmar Nova Password:
+                            input.select-option-box(type="password", name="passwordNovaConfirmacao", id="password-nova-confirmacao")
+
+                button.button-save-user(type="button", id="subBtn") Salvar
+        br
+
+        footer.w3-container.w3-teal.w3-center
+            address Gerado por EngWeb2024 em #{data} - 
+                a(href='/users/' + username) [Voltar]
+
+block scripts
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js")
+    script(src="/javascripts/saveUserChanges.js")

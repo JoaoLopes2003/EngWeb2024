@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  .w3-card-4
+    header.header-container.w3-teal
+      h1 #{titulo} - #{tipo._id}
+      .resource-options-container
+        a(href='/home') Voltar
+    br
+    .info-tipo-container.w3-cyan.w3-card-4
+        .w3-container.w3-white.titulo-info-tipo
+            h2 Informações
+        table.w3-table-all
+            tr
+                td Nome:
+                td #{tipo._id}
+            tr
+                td Ficheiros Obrigatórios:
+                td
+                    ul.list-mandatory-files
+                        each f in tipo.mandatoryFiles
+                            li.mandatory-file= f
+    br
+
+    footer.w3-container.w3-teal.w3-center
+      address Gerado por EngWeb2024 em #{data} - 
+        a(href='/home') [Voltar]

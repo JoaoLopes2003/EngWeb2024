@@ -1,0 +1,43 @@
+[
+    {
+      "_id": "johnDoe",
+      "nome": "John Doe",
+      "email": "john.doe@example.com",
+      "cargo": "Utilizador",
+      "dataRegisto": "2023-06-15T12:00:00Z",
+      "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
+    },
+    {
+      "_id": "janeSmith",
+      "nome": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "cargo": "Administrador",
+      "dataRegisto": "2023-06-15T13:00:00Z",
+      "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
+    },
+    {
+      "_id": "aliceBrown",
+      "nome": "Alice Brown",
+      "email": "alice.brown@example.com",
+      "cargo": "Utilizador",
+      "dataRegisto": "2023-06-15T14:00:00Z",
+      "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
+    },
+    {
+      "_id": "bobJohnson",
+      "nome": "Bob Johnson",
+      "email": "bob.johnson@example.com",
+      "cargo": "Administrador",
+      "dataRegisto": "2023-06-15T15:00:00Z",
+      "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
+    },
+    {
+      "_id": "carolDavis",
+      "nome": "Carol Davis",
+      "email": "carol.davis@example.com",
+      "cargo": "Utilizador",
+      "dataRegisto": "2023-06-15T16:00:00Z",
+      "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
+    }
+  ]
+  

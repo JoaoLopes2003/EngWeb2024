@@ -1,0 +1,124 @@
+extends layout
+
+block content
+  .w3-card-4
+    header.header-container.w3-teal
+      h1
+        = titulo
+        span(style="margin-left: 10px;")
+          a.w3-btn.w3-round.w3-grey(href='/registoRecurso') +
+      .nav-bar-container
+        if (userRole == 'admin')
+          .resource-options-container
+            a(href=`/tiposRecursos/edit/${tipo._id}`) [Editar]
+            if recursos.length === 0
+              a(href=`/tiposRecursos/delete/${tipo._id}`) [Apagar]
+        .vertical-line-2
+        a.texto-nav-bar(href='/home') Home
+        .vertical-line-2
+        a.texto-nav-bar(href='/users/logout') Logout
+    
+    .info-tipo-container.w3-cyan.w3-card-4
+        .w3-container.w3-white.titulo-info-tipo
+            h2 Informações
+        table.w3-table-all
+            tr
+                td Nome:
+                td #{tipo._id}
+            tr
+                td Ficheiros Obrigatórios:
+                td
+                    ul.list-mandatory-files
+                        each f in tipo.mandatoryFiles
+                            li.mandatory-file= f
+
+    
+    // Button that when pressed displays a div with all the filters
+    .w3-container.w3-cyan.filters-container
+      .w3-container.show-filters-button-div
+        button.button-filters(onclick="toggleFilters()") Show/Hide Filters
+
+      #filters.w3-container.w3-cyan.filters
+        form.w3-container(action="/recursos", method="get")
+          .row-of-filters
+            .filter-row
+              label(for="tema") Tema:
+              input.select-option-box(type="text", name="tema")
+            .filter-row
+              label(for="titulo") Título:
+              input.select-option-box(type="text", name="titulo")
+            .filter-row
+              label(for="subtitulo") Subtítulo:
+              input.select-option-box(type="text", name="subtitulo")
+          .row-of-filters
+            .filter-row
+              label(for="autor") Autor:
+              input.select-option-box(type="text", name="autor")
+            .filter-row
+              label(for="dataRegisto") Data de Adição:
+              input.select-option-box(type="date", name="dataRegisto")
+            .filter-row
+              label(for="ranking") Classificação:
+              input.select-option-box.classification-filter-box(type="number", name="rankingMin", min="0", max="5", step="0.1", placeholder="MIN")
+              input.select-option-box.classification-filter-box(type="number", name="rankingMax", min="0", max="5", step="0.1", placeholder="MAX")
+            .filter-row
+              label(for="sortAttribute") Ordenar por:
+              select.select-option-box(name="sortAttribute")
+                option(value='') Selecione
+                option(value="id") Id
+                option(value='dataCriacao') Data de Criação
+                option(value='dataRegisto') Data de Adição
+                option(value='tema') Tema
+                option(value='titulo') Título
+                option(value='subtitulo') Subtítulo
+                option(value='autor') Autor
+                option(value='ranking') Classificação
+              select.select-option-box(name="sortOrder")
+                option(value='') Selecione
+                option(value="asc") Ascendente
+                option(value="desc") Descendente  
+
+          button.button-submit-filters(type="submit") Filtrar
+
+    .info-tipo-container-2.w3-white.w3-card-4
+        h3 Recursos
+
+    br
+    .w3-container
+      table.w3-table-all
+        tr
+          th Id
+          th Tipo
+          th Tema
+          th Titulo
+          th Subtítulo
+          th Autor
+          th Data de Adição
+          th Classificação (0-5)
+        each r in recursos
+          tr
+            td
+              a(href=`/recursos/${r._id.replace('#', '%23')}`)= r._id
+            td
+              a(href='/recursos/' + r.tipo)= r.tipo
+            td= r.tema
+            td= r.titulo
+            td= r.subtitulo
+            td= r.autor
+            td= new Date(r.dataRegisto).toLocaleString('pt-PT', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
+            if r.ranking.numero_avaliacoes == 0
+              td Não avaliado
+            else
+              td= r.ranking.estrelas.toFixed(1)
+            td
+              if (userRole == 'admin' || username == r.autor)
+                a(href=`/recursos/edit/${r._id.replace('#', '%23')}`) [Editar]
+                a(href=`/recursos/delete/${r._id.replace('#', '%23')}`) [Apagar]
+    br
+
+    footer.w3-container.w3-teal.w3-center
+      address Gerado por EngWeb2024 em #{data} - 
+        a(href='/home') [Voltar]
+
+block scripts
+  script(src="/javascripts/searchFilters.js")

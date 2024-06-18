@@ -1,0 +1,54 @@
+[
+    {
+        "_id": "article",
+        "mandatoryFiles": ["main.pdf", "summary.txt", "manifest.xml"]
+    },
+    {
+        "_id": "video",
+        "mandatoryFiles": ["video.mp4", "transcript.txt", "manifest.xml"]
+    },
+    {
+        "_id": "podcast",
+        "mandatoryFiles": ["audio.mp3", "description.txt", "manifest.xml"]
+    },
+    {   "_id": "course",
+        "mandatoryFiles": ["course.zip", "description.txt", "manifest.xml"]
+    },
+    {
+        "_id": "thesis",
+        "mandatoryFiles": ["thesis.pdf", "abstract.txt", "references.pdf", "manifest.xml"]
+    },
+    {
+        "_id": "ebook",
+        "mandatoryFiles": ["ebook.epub", "cover.jpg", "manifest.xml"]
+    },
+    {
+        "_id": "book",
+        "mandatoryFiles": ["book.pdf", "cover.jpg", "manifest.xml"]
+    },
+    {
+        "_id": "app",
+        "mandatoryFiles": ["app.apk", "description.txt", "manifest.xml"]
+    },
+    {
+        "_id": "report",
+        "mandatoryFiles": ["report.pdf", "summary.txt", "manifest.xml"]
+    },
+    {
+        "_id": "exercise",
+        "mandatoryFiles": ["exercise.pdf", "solution.pdf", "manifest.xml"]
+    },
+    {  
+        "_id": "dataset",
+        "mandatoryFiles": ["data.csv", "description.txt", "manifest.xml"]
+    },
+    {
+        "_id": "project",
+        "mandatoryFiles": ["project.zip", "description.txt", "manifest.xml"]
+    },
+
+    {
+        "_id": "presentation",
+        "mandatoryFiles": ["slides.pptx", "notes.txt", "manifest.xml"]
+    }
+]

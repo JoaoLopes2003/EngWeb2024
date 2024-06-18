@@ -1,0 +1,60 @@
+extends layout
+
+block content
+    .w3-card-4
+        header.header-container.w3-teal
+            h1 #{titulo} - #{recurso._id}
+            .nav-bar-container
+                a.texto-nav-bar(href='/home') Home
+                .vertical-line-2
+                a.texto-nav-bar(href='/users/logout') Logout
+            
+        .w3-container
+            br
+            form.w3-container(action=`/recursos/edit/${recurso._id.replace('#', '%23')}` method="POST" enctype="multipart/form-data")
+                fieldset.w3-cyan
+                    legend
+                        b Dados do Recurso
+                    .row-of-resource-data
+                        .resource-data-row
+                            label(for="tipo") Tipo:
+                            input.select-option-box(type="text", name="tipo", id="tipo", value=recurso.tipo, readonly)
+                        .resource-data-row
+                            label Tema:
+                            input.select-option-box(type="text", name="tema", required, value=recurso.tema)
+                        .resource-data-row
+                            label Título:
+                            input.select-option-box(type="text", name="titulo", required, value=recurso.titulo)
+                        .resource-data-row
+                            label Subtítulo:
+                            input.select-option-box(type="text", name="subtitulo", required, value=recurso.subtitulo)
+                    .row-of-resource-data
+                        .resource-data-row
+                            label Autor:
+                                if (userRole == 'admin')
+                                    input.select-option-box(type="text", name="autor", required, value=recurso.autor)
+                                else
+                                    input.select-option-box(type="text", name="autor", value=recurso.autor, readonly)
+                        .resource-data-row
+                            label Visibilidade:
+                            select.select-option-box(name="visibilidade", required, value=recurso.visibilidade)
+                                option(value="publico") Público
+                                option(value="privado") Privado
+                        .resource-data-row
+                            label Data de Criacao:
+                            input.select-option-box(type="date", name="dataCriacao", required, value=recurso.dataCriacao)
+                    .row-of-resource-data
+                        .resource-data-row
+                            label Selecionar Ficheiro (ZIP):
+                            br
+                            input(type="file", name="zip", id="zip", accept=".zip")
+
+                button.button-submit-resource(type="button", id="submitBtn") Salvar
+        br
+
+        footer.w3-container.w3-teal.w3-center
+            address Gerado por EngWeb2024 em #{data} - 
+                a(href='/recursos') [Voltar]
+
+block scripts
+    script(src="/javascripts/uploadFile_editPage.js")

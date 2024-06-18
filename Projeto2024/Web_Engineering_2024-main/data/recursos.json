@@ -1,0 +1,2063 @@
+[
+    {
+        "_id": "#1",
+        "tipo": "article",
+        "dataCriacao": "2024-05-11",
+        "dataRegisto": "2024-06-13T14:25:00Z",
+        "visibilidade": "publico",
+        "tema": "education",
+        "titulo": "Learning JSON",
+        "subtitulo": "A comprehensive guide",
+        "autor": "John Doe",
+        "comentarios": [
+            {
+                "usuario": "jane_doe",
+                "comentario": "Great article!",
+                "data":  "2021-06-02T14:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "mark_smith",
+                "comentario": "Very informative.",
+                "data":  "2021-06-03T16:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 120
+        },
+        "pathRecurso": "#1.zip",
+        "notificacoes": [
+            {
+                "usuario": "jane_doe"
+            },
+            {
+                "usuario": "mark_smith"
+            }
+        ]
+    },
+    {
+        "_id": "#2",
+        "tipo": "video",
+        "dataCriacao": "2020-05-12",
+        "dataRegisto": "2024-06-13T12:11:13Z",
+        "visibilidade": "private",
+        "tema": "technology",
+        "titulo": "Understanding JavaScript",
+        "subtitulo": "The basics and beyond",
+        "autor": "Alice Johnson",
+        "comentarios": [
+            {
+                "usuario": "bob_brown",
+                "comentario": "Very clear explanation.",
+                "data":  "2021-06-03T18:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 1
+        },
+        "pathRecurso": "#2.zip",
+        "notificacoes": [
+            {
+                "usuario": "bob_brown"
+            }
+        ]
+    },
+    {
+        "_id": "#3",
+        "tipo": "book",
+        "dataCriacao": "2018-03-22",
+        "dataRegisto": "2024-06-14T10:15:30Z",
+        "visibilidade": "publico",
+        "tema": "history",
+        "titulo": "World History Overview",
+        "subtitulo": "From ancient times to the modern era",
+        "autor": "Dr. Emma Wilson",
+        "comentarios": [
+            {
+                "usuario": "historian_joe",
+                "comentario": "A detailed and engaging book!",
+                "data":  "2021-07-10T14:30:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "reader123",
+                "comentario": "Very informative.",
+                "data":  "2021-07-15T10:20:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#3.zip",
+        "notificacoes": [
+            {
+                "usuario": "historian_joe"
+            },
+            {
+                "usuario": "reader123"
+            }
+        ]
+    },
+    {
+        "_id": "#4",
+        "tipo": "app",
+        "dataCriacao": "2023-01-15",
+        "dataRegisto": "2024-06-15T08:45:00Z",
+        "visibilidade": "publico",
+        "tema": "productivity",
+        "titulo": "Task Manager Pro",
+        "subtitulo": "Organize your tasks efficiently",
+        "autor": "Tech Solutions Inc.",
+        "comentarios": [
+            {
+                "usuario": "user_alpha",
+                "comentario": "Highly useful for managing tasks.",
+                "data":  "2023-02-10T09:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "beta_user",
+                "comentario": "Love the user interface.",
+                "data":  "2023-02-12T15:45:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#4.zip",
+        "notificacoes": [
+            {
+                "usuario": "user_alpha"
+            },
+            {
+                "usuario": "beta_user"
+            }
+        ]
+    },
+    {
+        "_id": "#5",
+        "tipo": "report",
+        "dataCriacao": "2022-07-19",
+        "dataRegisto": "2024-06-15T13:20:00Z",
+        "visibilidade": "private",
+        "tema": "environment",
+        "titulo": "Climate Change Impact Analysis",
+        "subtitulo": "An in-depth look at recent trends",
+        "autor": "Green Earth Organization",
+        "comentarios": [
+            {
+                "usuario": "enviro_fan",
+                "comentario": "Essential read for anyone interested in climate change.",
+                "data":  "2022-08-05T16:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 1
+        },
+        "pathRecurso": "#5.zip",
+        "notificacoes": [
+            {
+                "usuario": "enviro_fan"
+            }
+        ]
+    },
+    {
+        "_id": "#6",
+        "tipo": "article",
+        "dataCriacao": "2024-02-20",
+        "dataRegisto": "2024-06-16T09:30:00Z",
+        "visibilidade": "publico",
+        "tema": "science",
+        "titulo": "Quantum Computing Explained",
+        "subtitulo": "The future of computation",
+        "autor": "Dr. Lucas White",
+        "comentarios": [
+            {
+                "usuario": "science_geek",
+                "comentario": "A fascinating read!",
+                "data":  "2024-03-01T11:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "tech_savvy",
+                "comentario": "Very insightful.",
+                "data":  "2024-03-05T14:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#6.zip",
+        "notificacoes": [
+            {
+                "usuario": "science_geek"
+            },
+            {
+                "usuario": "tech_savvy"
+            }
+        ]
+    },
+    {
+        "_id": "#7",
+        "tipo": "video",
+        "dataCriacao": "2021-11-05",
+        "dataRegisto": "2024-06-16T15:10:00Z",
+        "visibilidade": "publico",
+        "tema": "education",
+        "titulo": "Mastering Python",
+        "subtitulo": "From basics to advanced",
+        "autor": "Jane Smith",
+        "comentarios": [
+            {
+                "usuario": "coder_john",
+                "comentario": "Great explanations!",
+                "data":  "2021-11-20T17:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "py_dev",
+                "comentario": "Helped me a lot.",
+                "data":  "2021-12-05T19:30:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#7.zip",
+        "notificacoes": [
+            {
+                "usuario": "coder_john"
+            },
+            {
+                "usuario": "py_dev"
+            }
+        ]
+    },
+    {
+        "_id": "#8",
+        "tipo": "book",
+        "dataCriacao": "2019-06-01",
+        "dataRegisto": "2024-06-17T08:00:00Z",
+        "visibilidade": "publico",
+        "tema": "literature",
+        "titulo": "The Art of Storytelling",
+        "subtitulo": "Crafting compelling narratives",
+        "autor": "Rachel Adams",
+        "comentarios": [
+            {
+                "usuario": "literature_lover",
+                "comentario": "A must-read for writers.",
+                "data":  "2019-07-10T10:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 1
+        },
+        "pathRecurso": "#8.zip",
+        "notificacoes": [
+            {
+                "usuario": "literature_lover"
+            }
+        ]
+    },
+    {
+        "_id": "#3",
+        "tipo": "book",
+        "dataCriacao": "2018-03-22",
+        "dataRegisto": "2024-06-14T10:15:30Z",
+        "visibilidade": "publico",
+        "tema": "history",
+        "titulo": "World History Overview",
+        "subtitulo": "From ancient times to the modern era",
+        "autor": "Dr. Emma Wilson",
+        "comentarios": [
+            {
+                "usuario": "historian_joe",
+                "comentario": "A detailed and engaging book!",
+                "data":  "2021-07-10T14:30:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "reader123",
+                "comentario": "Very informative.",
+                "data":  "2021-07-15T10:20:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#3.zip",
+        "notificacoes": [
+            {
+                "usuario": "historian_joe"
+            },
+            {
+                "usuario": "reader123"
+            }
+        ]
+    },
+    {
+        "_id": "#4",
+        "tipo": "app",
+        "dataCriacao": "2023-01-15",
+        "dataRegisto": "2024-06-15T08:45:00Z",
+        "visibilidade": "publico",
+        "tema": "productivity",
+        "titulo": "Task Manager Pro",
+        "subtitulo": "Organize your tasks efficiently",
+        "autor": "Tech Solutions Inc.",
+        "comentarios": [
+            {
+                "usuario": "user_alpha",
+                "comentario": "Highly useful for managing tasks.",
+                "data":  "2023-02-10T09:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "beta_user",
+                "comentario": "Love the user interface.",
+                "data":  "2023-02-12T15:45:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#4.zip",
+        "notificacoes": [
+            {
+                "usuario": "user_alpha"
+            },
+            {
+                "usuario": "beta_user"
+            }
+        ]
+    },
+    {
+        "_id": "#5",
+        "tipo": "report",
+        "dataCriacao": "2022-07-19",
+        "dataRegisto": "2024-06-15T13:20:00Z",
+        "visibilidade": "private",
+        "tema": "environment",
+        "titulo": "Climate Change Impact Analysis",
+        "subtitulo": "An in-depth look at recent trends",
+        "autor": "Green Earth Organization",
+        "comentarios": [
+            {
+                "usuario": "enviro_fan",
+                "comentario": "Essential read for anyone interested in climate change.",
+                "data": "2022-08-05T16:00:00Z",
+                "classificacao": "5.0"
+            }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 1
+        },
+        "pathRecurso": "#5.zip",
+        "notificacoes": [
+            {
+                "usuario": "enviro_fan"
+            }
+        ]
+    },
+    {
+        "_id": "#6",
+        "tipo": "article",
+        "dataCriacao": "2024-02-20",
+        "dataRegisto": "2024-06-16T09:30:00Z",
+        "visibilidade": "publico",
+        "tema": "science",
+        "titulo": "Quantum Computing Explained",
+        "subtitulo": "The future of computation",
+        "autor": "Dr. Lucas White",
+        "comentarios": [
+            {
+                "usuario": "science_geek",
+                "comentario": "A fascinating read!",
+                "data":  "2024-03-01T11:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "tech_savvy",
+                "comentario": "Very insightful.",
+                "data":  "2024-03-05T14:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#6.zip",
+        "notificacoes": [
+            {
+                "usuario": "science_geek"
+            },
+            {
+                "usuario": "tech_savvy"
+            }
+        ]
+    },
+    {
+        "_id": "#7",
+        "tipo": "video",
+        "dataCriacao": "2021-11-05",
+        "dataRegisto": "2024-06-16T15:10:00Z",
+        "visibilidade": "publico",
+        "tema": "education",
+        "titulo": "Mastering Python",
+        "subtitulo": "From basics to advanced",
+        "autor": "Jane Smith",
+        "comentarios": [
+            {
+                "usuario": "coder_john",
+                "comentario": "Great explanations!",
+                "data":  "2021-11-20T17:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "py_dev",
+                "comentario": "Helped me a lot.",
+                "data":  "2021-12-05T19:30:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#7.zip",
+        "notificacoes": [
+            {
+                "usuario": "coder_john"
+            },
+            {
+                "usuario": "py_dev"
+            }
+        ]
+    },
+    {
+        "_id": "#8",
+        "tipo": "book",
+        "dataCriacao": "2019-06-01",
+        "dataRegisto": "2024-06-17T08:00:00Z",
+        "visibilidade": "publico",
+        "tema": "literature",
+        "titulo": "The Art of Storytelling",
+        "subtitulo": "Crafting compelling narratives",
+        "autor": "Rachel Adams",
+        "comentarios": [
+            {
+                "usuario": "literature_lover",
+                "comentario": "A must-read for writers.",
+                "data":  "2019-07-10T10:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 1
+        },
+        "pathRecurso": "#8.zip",
+        "notificacoes": [
+            {
+                "usuario": "literature_lover"
+            }
+        ]
+    },
+    {
+        "_id": "#9",
+        "tipo": "app",
+        "dataCriacao": "2023-05-21",
+        "dataRegisto": "2024-06-17T10:30:00Z",
+        "visibilidade": "publico",
+        "tema": "health",
+        "titulo": "Wellness Tracker",
+        "subtitulo": "Monitor your health and fitness",
+        "autor": "HealthTech Co.",
+        "comentarios": [
+            {
+                "usuario": "fit_fan",
+                "comentario": "Excellent app for health tracking.",
+                "data":  "2023-06-01T14:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 1
+        },
+        "pathRecurso": "#9.zip",
+        "notificacoes": [
+            {
+                "usuario": "fit_fan"
+            }
+        ]
+    },
+    {
+        "_id": "#10",
+        "tipo": "report",
+        "dataCriacao": "2022-03-10",
+        "dataRegisto": "2024-06-17T11:45:00Z",
+        "visibilidade": "private",
+        "tema": "business",
+        "titulo": "Market Trends 2022",
+        "subtitulo": "A comprehensive market analysis",
+        "autor": "Global Market Insights",
+        "comentarios": [
+            {
+                "usuario": "business_guru",
+                "comentario": "Valuable insights.",
+                "data":  "2022-03-15T16:30:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 1
+        },
+        "pathRecurso": "#10.zip",
+        "notificacoes": [
+            {
+                "usuario": "business_guru"
+            }
+        ]
+    },
+    {
+        "_id": "#11",
+        "tipo": "article",
+        "dataCriacao": "2023-12-25",
+        "dataRegisto": "2024-06-18T07:50:00Z",
+        "visibilidade": "publico",
+        "tema": "technology",
+        "titulo": "AI in Healthcare",
+        "subtitulo": "Transforming medical practices",
+        "autor": "Dr. Alan Roberts",
+        "comentarios": [
+            {
+                "usuario": "med_enthusiast",
+                "comentario": "Insightful and well-written.",
+                "data":  "2024-01-10T09:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "tech_medic",
+                "comentario": "Great overview of AI applications.",
+                "data":  "2024-01-15T12:30:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#11.zip",
+        "notificacoes": [
+            {
+                "usuario": "med_enthusiast"
+            },
+            {
+                "usuario": "tech_medic"
+            }
+        ]
+    },
+    {
+        "_id": "#12",
+        "tipo": "video",
+        "dataCriacao": "2022-08-18",
+        "dataRegisto": "2024-06-18T14:20:00Z",
+        "visibilidade": "private",
+        "tema": "science",
+        "titulo": "The Wonders of Space",
+        "subtitulo": "Exploring the universe",
+        "autor": "Prof. Sarah Green",
+        "comentarios": [
+            {
+                "usuario": "astro_fan",
+                "comentario": "Incredibly fascinating!",
+                "data":  "2022-08-20T18:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#12.zip",
+        "notificacoes": [
+            {
+                "usuario": "astro_fan"
+            }
+        ]
+    },
+    {
+        "_id": "#13",
+        "tipo": "book",
+        "dataCriacao": "2020-11-30",
+        "dataRegisto": "2024-06-19T09:00:00Z",
+        "visibilidade": "publico",
+        "tema": "technology",
+        "titulo": "Cybersecurity Essentials",
+        "subtitulo": "Protecting your digital life",
+        "autor": "CyberSafe Institute",
+        "comentarios": [
+            {
+                "usuario": "cyber_expert",
+                "comentario": "A must-read for online security.",
+                "data":  "2021-01-05T10:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 1
+        },
+        "pathRecurso": "#13.zip",
+        "notificacoes": [
+            {
+                "usuario": "cyber_expert"
+            }
+        ]
+    },
+    {
+        "_id": "#14",
+        "tipo": "app",
+        "dataCriacao": "2023-09-12",
+        "dataRegisto": "2024-06-19T11:30:00Z",
+        "visibilidade": "publico",
+        "tema": "productivity",
+        "titulo": "Project Planner",
+        "subtitulo": "Manage your projects effectively",
+        "autor": "Project Management Co.",
+        "comentarios": [
+            {
+                "usuario": "project_manager",
+                "comentario": "Great tool for project planning.",
+                "data":  "2023-10-01T14:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 1
+        },
+        "pathRecurso": "#14.zip",
+        "notificacoes": [
+            {
+                "usuario": "project_manager"
+            }
+        ]
+    },
+    {
+        "_id": "#15",
+        "tipo": "project",
+        "dataCriacao": "2024-01-25",
+        "dataRegisto": "2024-06-18T18:45:00Z",
+        "visibilidade": "private",
+        "tema": "web_development",
+        "titulo": "E-commerce Website Development",
+        "subtitulo": "Building a scalable online store",
+        "autor": "Web Dev Team",
+        "comentarios": [
+            {
+                "usuario": "client_a",
+                "comentario": "Great project, met all requirements.",
+                "data":  "2024-02-15T10:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 1
+        },
+        "pathRecurso": "#15.zip",
+        "notificacoes": [
+            {
+                "usuario": "client_a"
+            }
+        ]
+    },
+    {
+        "_id": "#16",
+        "tipo": "presentation",
+        "dataCriacao": "2022-04-12",
+        "dataRegisto": "2024-06-18T19:30:00Z",
+        "visibilidade": "publico",
+        "tema": "business",
+        "titulo": "Market Analysis 2022",
+        "subtitulo": "Trends and insights",
+        "autor": "Business Insights Team",
+        "comentarios": [
+            {
+                "usuario": "market_expert",
+                "comentario": "Very detailed and informative.",
+                "data":  "2022-04-20T12:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "biz_analyst",
+                "comentario": "Useful for understanding market trends.",
+                "data":  "2022-04-22T14:30:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#16.zip",
+        "notificacoes": [
+            {
+                "usuario": "market_expert"
+            },
+            {
+                "usuario": "biz_analyst"
+            }
+        ]
+    },
+    {
+        "_id": "#17",
+        "tipo": "exercise",
+        "dataCriacao": "2024-02-20",
+        "dataRegisto": "2024-06-19T07:50:00Z",
+        "visibilidade": "publico",
+        "tema": "mathematics",
+        "titulo": "Calculus Problem Set",
+        "subtitulo": "Practice with integrals and derivatives",
+        "autor": "Dr. James Lee",
+        "comentarios": [
+            {
+                "usuario": "math_wiz",
+                "comentario": "Challenging and fun problems.",
+                "data":  "2024-03-05T09:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "calculus_student",
+                "comentario": "Great practice material.",
+                "data":  "2024-03-10T10:30:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#17.zip",
+        "notificacoes": [
+            {
+                "usuario": "math_wiz"
+            },
+            {
+                "usuario": "calculus_student"
+            }
+        ]
+    },
+    {
+        "_id": "#18",
+        "tipo": "dataset",
+        "dataCriacao": "2023-06-15",
+        "dataRegisto": "2024-06-19T09:10:00Z",
+        "visibilidade": "publico",
+        "tema": "data_science",
+        "titulo": "Customer Purchase Data",
+        "subtitulo": "2023 retail transactions",
+        "autor": "Data Analytics Co.",
+        "comentarios": [
+            {
+                "usuario": "data_scientist",
+                "comentario": "Extensive dataset for analysis.",
+                "data":  "2023-07-01T11:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "ml_practitioner",
+                "comentario": "Great for machine learning projects.",
+                "data":  "2023-07-05T14:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#18.zip",
+        "notificacoes": [
+            {
+                "usuario": "data_scientist"
+            },
+            {
+                "usuario": "ml_practitioner"
+            }
+        ]
+    },
+    {
+        "_id": "#19",
+        "tipo": "book",
+        "dataCriacao": "2022-05-05",
+        "dataRegisto": "2024-06-19T10:30:00Z",
+        "visibilidade": "publico",
+        "tema": "psychology",
+        "titulo": "The Power of Habit",
+        "subtitulo": "Why we do what we do",
+        "autor": "Charles Duhigg",
+        "comentarios": [
+            {
+                "usuario": "habit_hacker",
+                "comentario": "A fascinating read on behavior patterns.",
+                "data":  "2022-06-10T11:30:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "mind_master",
+                "comentario": "Insightful and practical.",
+                "data":  "2022-06-15T14:20:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#19.zip",
+        "notificacoes": [
+            {
+                "usuario": "habit_hacker"
+            },
+            {
+                "usuario": "mind_master"
+            }
+        ]
+    },
+    {
+        "_id": "#20",
+        "tipo": "article",
+        "dataCriacao": "2023-03-18",
+        "dataRegisto": "2024-06-19T12:45:00Z",
+        "visibilidade": "publico",
+        "tema": "science",
+        "titulo": "Quantum Mechanics: An Overview",
+        "subtitulo": "Fundamentals and applications",
+        "autor": "Dr. Emily Clark",
+        "comentarios": [
+            {
+                "usuario": "science_buff",
+                "comentario": "Complex but rewarding read.",
+                "data":  "2023-04-01T09:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "quantum_enthusiast",
+                "comentario": "Excellent introduction to the topic.",
+                "data":  "2023-04-05T12:30:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#20.zip",
+        "notificacoes": [
+            {
+                "usuario": "science_buff"
+            },
+            {
+                "usuario": "quantum_enthusiast"
+            }
+        ]
+    },
+    {
+        "_id": "#21",
+        "tipo": "video",
+        "dataCriacao": "2021-07-15",
+        "dataRegisto": "2024-06-19T14:10:00Z",
+        "visibilidade": "private",
+        "tema": "history",
+        "titulo": "Ancient Civilizations",
+        "subtitulo": "A journey through time",
+        "autor": "Historical Society",
+        "comentarios": [
+            {
+                "usuario": "history_buff",
+                "comentario": "Engaging and educational.",
+                "data":  "2021-08-01T10:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 1
+        },
+        "pathRecurso": "#21.zip",
+        "notificacoes": [
+            {
+                "usuario": "history_buff"
+            }
+        ]
+    },
+    {
+        "_id": "#22",
+        "tipo": "app",
+        "dataCriacao": "2024-01-05",
+        "dataRegisto": "2024-06-19T15:20:00Z",
+        "visibilidade": "publico",
+        "tema": "finance",
+        "titulo": "Budget Tracker",
+        "subtitulo": "Manage your finances efficiently",
+        "autor": "FinTech Solutions",
+        "comentarios": [
+            {
+                "usuario": "budget_guru",
+                "comentario": "Great for keeping track of expenses.",
+                "data":  "2024-01-15T14:30:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "saver_sally",
+                "comentario": "Helps me save money every month.",
+                "data":  "2024-01-20T16:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#22.zip",
+        "notificacoes": [
+            {
+                "usuario": "budget_guru"
+            },
+            {
+                "usuario": "saver_sally"
+            }
+        ]
+    },
+    {
+        "_id": "#23",
+        "tipo": "report",
+        "dataCriacao": "2023-11-25",
+        "dataRegisto": "2024-06-19T16:50:00Z",
+        "visibilidade": "private",
+        "tema": "environment",
+        "titulo": "Climate Change Impact 2023",
+        "subtitulo": "A detailed environmental report",
+        "autor": "Green Earth Institute",
+        "comentarios": [
+            {
+                "usuario": "eco_warrior",
+                "comentario": "Very thorough and informative.",
+                "data":  "2023-12-01T09:30:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 1
+        },
+        "pathRecurso": "#23.zip",
+        "notificacoes": [
+            {
+                "usuario": "eco_warrior"
+            }
+        ]
+    },
+    {
+        "_id": "#24",
+        "tipo": "presentation",
+        "dataCriacao": "2022-10-15",
+        "dataRegisto": "2024-06-20T07:30:00Z",
+        "visibilidade": "publico",
+        "tema": "education",
+        "titulo": "Innovative Teaching Methods",
+        "subtitulo": "Enhancing classroom learning",
+        "autor": "EduFuture Org",
+        "comentarios": [
+            {
+                "usuario": "edu_expert",
+                "comentario": "Inspirational and practical ideas.",
+                "data":  "2022-10-20T10:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "teacher_guide",
+                "comentario": "Useful tips for educators.",
+                "data":  "2022-10-25T11:30:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#24.zip",
+        "notificacoes": [
+            {
+                "usuario": "edu_expert"
+            },
+            {
+                "usuario": "teacher_guide"
+            }
+        ]
+    },
+    {
+        "_id": "#25",
+        "tipo": "course",
+        "dataCriacao": "2024-03-22",
+        "dataRegisto": "2024-06-20T09:15:00Z",
+        "visibilidade": "publico",
+        "tema": "art",
+        "titulo": "Digital Art for Beginners",
+        "subtitulo": "Learn to create digital masterpieces",
+        "autor": "Creative Studio",
+        "comentarios": [
+            {
+                "usuario": "art_lover",
+                "comentario": "A fantastic introduction to digital art.",
+                "data":  "2024-04-01T12:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "digital_artist",
+                "comentario": "Helped me improve my skills significantly.",
+                "data":  "2024-04-05T15:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#25.zip",
+        "notificacoes": [
+            {
+                "usuario": "art_lover"
+            },
+            {
+                "usuario": "digital_artist"
+            }
+        ]
+    },
+    {
+        "_id": "#26",
+        "tipo": "project",
+        "dataCriacao": "2024-04-10",
+        "dataRegisto": "2024-06-20T10:45:00Z",
+        "visibilidade": "publico",
+        "tema": "engineering",
+        "titulo": "Renewable Energy Solutions",
+        "subtitulo": "Developing sustainable power systems",
+        "autor": "Engineering Innovators",
+        "comentarios": [
+            {
+                "usuario": "energy_enthusiast",
+                "comentario": "Impressive project with real-world applications.",
+                "data":  "2024-04-15T11:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 1
+        },
+        "pathRecurso": "#26.zip",
+        "notificacoes": [
+            {
+                "usuario": "energy_enthusiast"
+            }
+        ]
+    },
+    {
+        "_id": "#27",
+        "tipo": "thesis",
+        "dataCriacao": "2023-02-18",
+        "dataRegisto": "2024-06-20T12:00:00Z",
+        "visibilidade": "private",
+        "tema": "sociology",
+        "titulo": "Social Media and Youth",
+        "subtitulo": "Impact on mental health and well-being",
+        "autor": "Anna Patel",
+        "comentarios": [
+            {
+                "usuario": "sociology_student",
+                "comentario": "A well-researched and timely study.",
+                "data":  "2023-03-10T10:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "mental_health_advocate",
+                "comentario": "Important insights into social media effects.",
+                "data":  "2023-03-15T12:30:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#27.zip",
+        "notificacoes": [
+            {
+                "usuario": "sociology_student"
+            },
+            {
+                "usuario": "mental_health_advocate"
+            }
+        ]
+    },
+    {
+        "_id": "#28",
+        "tipo": "exercise",
+        "dataCriacao": "2024-01-10",
+        "dataRegisto": "2024-06-20T13:30:00Z",
+        "visibilidade": "publico",
+        "tema": "computer_science",
+        "titulo": "Data Structures Practice",
+        "subtitulo": "Linked lists, trees, and graphs",
+        "autor": "Prof. Alan Turing",
+        "comentarios": [
+            {
+                "usuario": "cs_student",
+                "comentario": "Excellent practice problems.",
+                "data":  "2024-01-20T11:30:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "programming_ninja",
+                "comentario": "Great for mastering data structures.",
+                "data":  "2024-01-25T13:45:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#28.zip",
+        "notificacoes": [
+            {
+                "usuario": "cs_student"
+            },
+            {
+                "usuario": "programming_ninja"
+            }
+        ]
+    },
+    {
+        "_id": "#29",
+        "tipo": "dataset",
+        "dataCriacao": "2022-08-12",
+        "dataRegisto": "2024-06-20T15:00:00Z",
+        "visibilidade": "publico",
+        "tema": "economics",
+        "titulo": "Global Economic Indicators",
+        "subtitulo": "Key metrics from 2000 to 2023",
+        "autor": "World Data Bank",
+        "comentarios": [
+            {
+                "usuario": "economics_pro",
+                "comentario": "Extremely useful dataset for analysis.",
+                "data":  "2022-09-01T10:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "data_analyst",
+                "comentario": "Great for economic forecasting.",
+                "data":  "2022-09-05T12:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#29.zip",
+        "notificacoes": [
+            {
+                "usuario": "economics_pro"
+            },
+            {
+                "usuario": "data_analyst"
+            }
+        ]
+    },
+    {
+        "_id": "#30",
+        "tipo": "report",
+        "dataCriacao": "2023-07-14",
+        "dataRegisto": "2024-06-21T09:30:00Z",
+        "visibilidade": "private",
+        "tema": "healthcare",
+        "titulo": "Healthcare Trends 2023",
+        "subtitulo": "Analyzing the latest developments",
+        "autor": "Health Insights Team",
+        "comentarios": [
+            {
+                "usuario": "med_professional",
+                "comentario": "Detailed and up-to-date report.",
+                "data":  "2023-08-01T11:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 1
+        },
+        "pathRecurso": "#30.zip",
+        "notificacoes": [
+            {
+                "usuario": "med_professional"
+            }
+        ]
+    },
+    {
+        "_id": "#31",
+        "tipo": "course",
+        "dataCriacao": "2024-02-10",
+        "dataRegisto": "2024-06-21T14:00:00Z",
+        "visibilidade": "publico",
+        "tema": "business",
+        "titulo": "Introduction to Marketing",
+        "subtitulo": "Fundamentals and strategies",
+        "autor": "Marketing Masters",
+        "comentarios": [
+            {
+                "usuario": "biz_pro",
+                "comentario": "Great for beginners!",
+                "data":  "2024-02-20T10:30:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "market_guru",
+                "comentario": "Very informative and well-structured.",
+                "data":  "2024-02-25T15:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#31.zip",
+        "notificacoes": [
+            {
+                "usuario": "biz_pro"
+            },
+            {
+                "usuario": "market_guru"
+            }
+        ]
+    },
+    {
+        "_id": "#32",
+        "tipo": "presentation",
+        "dataCriacao": "2023-08-15",
+        "dataRegisto": "2024-06-21T15:20:00Z",
+        "visibilidade": "publico",
+        "tema": "technology",
+        "titulo": "Future of AI",
+        "subtitulo": "Trends and predictions",
+        "autor": "Tech Innovators",
+        "comentarios": [
+            {
+                "usuario": "tech_fan",
+                "comentario": "Eye-opening and informative.",
+                "data":  "2023-09-01T12:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "ai_enthusiast",
+                "comentario": "Great insights into AI trends.",
+                "data":  "2023-09-05T13:45:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#32.zip",
+        "notificacoes": [
+            {
+                "usuario": "tech_fan"
+            },
+            {
+                "usuario": "ai_enthusiast"
+            }
+        ]
+    },
+    {
+        "_id": "#33",
+        "tipo": "project",
+        "dataCriacao": "2023-05-10",
+        "dataRegisto": "2024-06-21T16:30:00Z",
+        "visibilidade": "publico",
+        "tema": "engineering",
+        "titulo": "Smart City Development",
+        "subtitulo": "Sustainable urban planning",
+        "autor": "Urban Planners Group",
+        "comentarios": [
+            {
+                "usuario": "urban_dev",
+                "comentario": "Innovative and forward-thinking.",
+                "data":  "2023-05-20T14:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#33.zip",
+        "notificacoes": [
+            {
+                "usuario": "urban_dev"
+            }
+        ]
+    },
+    {
+        "_id": "#34",
+        "tipo": "app",
+        "dataCriacao": "2024-04-18",
+        "dataRegisto": "2024-06-22T09:00:00Z",
+        "visibilidade": "publico",
+        "tema": "education",
+        "titulo": "Language Learning Buddy",
+        "subtitulo": "Interactive language practice",
+        "autor": "EduTech Solutions",
+        "comentarios": [
+            {
+                "usuario": "language_learner",
+                "comentario": "Makes learning fun and easy.",
+                "data":  "2024-04-25T16:30:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "polyglot",
+                "comentario": "Great app for language practice.",
+                "data":  "2024-05-01T14:15:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#34.zip",
+        "notificacoes": [
+            {
+                "usuario": "language_learner"
+            },
+            {
+                "usuario": "polyglot"
+            }
+        ]
+    },
+    {
+        "_id": "#35",
+        "tipo": "article",
+        "dataCriacao": "2024-01-22",
+        "dataRegisto": "2024-06-22T10:45:00Z",
+        "visibilidade": "publico",
+        "tema": "environment",
+        "titulo": "Sustainable Agriculture Practices",
+        "subtitulo": "Improving food security",
+        "autor": "Green Farming Journal",
+        "comentarios": [
+            {
+                "usuario": "farm_future",
+                "comentario": "Highly relevant and informative.",
+                "data":  "2024-02-01T12:45:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "eco_friendly_farmer",
+                "comentario": "Useful insights into sustainable practices.",
+                "data":  "2024-02-05T14:20:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#35.zip",
+        "notificacoes": [
+            {
+                "usuario": "farm_future"
+            },
+            {
+                "usuario": "eco_friendly_farmer"
+            }
+        ]
+    },
+    {
+        "_id": "#36",
+        "tipo": "video",
+        "dataCriacao": "2023-09-10",
+        "dataRegisto": "2024-06-22T12:00:00Z",
+        "visibilidade": "private",
+        "tema": "psychology",
+        "titulo": "Cognitive Behavioral Therapy",
+        "subtitulo": "Techniques and applications",
+        "autor": "Mental Health Center",
+        "comentarios": [
+            {
+                "usuario": "mental_wellness",
+                "comentario": "Very helpful and practical.",
+                "data":  "2023-09-20T11:15:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#36.zip",
+        "notificacoes": [
+            {
+                "usuario": "mental_wellness"
+            }
+        ]
+    },
+    {
+        "_id": "#37",
+        "tipo": "book",
+        "dataCriacao": "2021-11-20",
+        "dataRegisto": "2024-06-22T13:30:00Z",
+        "visibilidade": "publico",
+        "tema": "philosophy",
+        "titulo": "The Philosophy of Freedom",
+        "subtitulo": "Exploring concepts of liberty",
+        "autor": "Rudolf Steiner",
+        "comentarios": [
+            {
+                "usuario": "philosophy_lover",
+                "comentario": "A profound and thought-provoking book.",
+                "data":  "2022-01-10T14:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "freedom_fighter",
+                "comentario": "Challenging but rewarding.",
+                "data":  "2022-01-15T16:30:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#37.zip",
+        "notificacoes": [
+            {
+                "usuario": "philosophy_lover"
+            },
+            {
+                "usuario": "freedom_fighter"
+            }
+        ]
+    },{
+        "_id": "#38",
+        "tipo": "report",
+        "dataCriacao": "2023-06-20",
+        "dataRegisto": "2024-06-22T15:00:00Z",
+        "visibilidade": "private",
+        "tema": "technology",
+        "titulo": "Blockchain Technology Impact",
+        "subtitulo": "Current applications and future trends",
+        "autor": "Tech Research Group",
+        "comentarios": [
+            {
+                "usuario": "blockchain_expert",
+                "comentario": "Comprehensive and insightful.",
+                "data":  "2023-07-01T11:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#38.zip",
+        "notificacoes": [
+            {
+                "usuario": "blockchain_expert"
+            }
+        ]
+    },
+    {
+        "_id": "#39",
+        "tipo": "dataset",
+        "dataCriacao": "2023-01-25",
+        "dataRegisto": "2024-06-22T16:30:00Z",
+        "visibilidade": "publico",
+        "tema": "finance",
+        "titulo": "Cryptocurrency Market Data",
+        "subtitulo": "Price trends from 2010 to 2023",
+        "autor": "Crypto Analytics",
+        "comentarios": [
+            {
+                "usuario": "crypto_trader",
+                "comentario": "Essential data for market analysis.",
+                "data":  "2023-02-10T12:30:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "data_geek",
+                "comentario": "Great resource for data-driven insights.",
+                "data":  "2023-02-15T14:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#39.zip",
+        "notificacoes": [
+            {
+                "usuario": "crypto_trader"
+            },
+            {
+                "usuario": "data_geek"
+            }
+        ]
+    },
+    {
+        "_id": "#40",
+        "tipo": "thesis",
+        "dataCriacao": "2022-11-15",
+        "dataRegisto": "2024-06-23T09:00:00Z",
+        "visibilidade": "private",
+        "tema": "education",
+        "titulo": "Online Learning Efficacy",
+        "subtitulo": "Impact on student performance",
+        "autor": "Sarah Thompson",
+        "comentarios": [
+            {
+                "usuario": "edu_researcher",
+                "comentario": "Valuable study with practical implications.",
+                "data":  "2022-12-05T10:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#40.zip",
+        "notificacoes": [
+            {
+                "usuario": "edu_researcher"
+            }
+        ]
+    },
+    {
+        "_id": "#41",
+        "tipo": "exercise",
+        "dataCriacao": "2024-03-12",
+        "dataRegisto": "2024-06-23T10:30:00Z",
+        "visibilidade": "publico",
+        "tema": "mathematics",
+        "titulo": "Advanced Calculus Problems",
+        "subtitulo": "Integration and differentiation",
+        "autor": "Math Profs",
+        "comentarios": [
+            {
+                "usuario": "math_whiz",
+                "comentario": "Challenging but very helpful.",
+                "data":  "2024-03-22T11:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "calculus_master",
+                "comentario": "Great practice for advanced learners.",
+                "data":  "2024-03-25T14:15:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#41.zip",
+        "notificacoes": [
+            {
+                "usuario": "math_whiz"
+            },
+            {
+                "usuario": "calculus_master"
+            }
+        ]
+    },
+    {
+        "_id": "#42",
+        "tipo": "book",
+        "dataCriacao": "2022-04-25",
+        "dataRegisto": "2024-06-23T12:00:00Z",
+        "visibilidade": "publico",
+        "tema": "history",
+        "titulo": "The Rise and Fall of Empires",
+        "subtitulo": "Lessons from the past",
+        "autor": "Historian Group",
+        "comentarios": [
+            {
+                "usuario": "history_buff",
+                "comentario": "Well-written and engaging.",
+                "data":  "2022-05-10T13:30:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "past_and_present",
+                "comentario": "Provides deep insights into historical events.",
+                "data":  "2022-05-15T15:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#42.zip",
+        "notificacoes": [
+            {
+                "usuario": "history_buff"
+            },
+            {
+                "usuario": "past_and_present"
+            }
+        ]
+    },
+    {
+        "_id": "#43",
+        "tipo": "video",
+        "dataCriacao": "2023-02-18",
+        "dataRegisto": "2024-06-23T13:30:00Z",
+        "visibilidade": "publico",
+        "tema": "science",
+        "titulo": "The Wonders of the Universe",
+        "subtitulo": "Exploring space and time",
+        "autor": "Space Exploration Team",
+        "comentarios": [
+            {
+                "usuario": "stargazer",
+                "comentario": "Fascinating and visually stunning.",
+                "data":  "2023-03-01T14:45:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "astro_lover",
+                "comentario": "Makes complex concepts easy to understand.",
+                "data":  "2023-03-05T16:15:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#43.zip",
+        "notificacoes": [
+            {
+                "usuario": "stargazer"
+            },
+            {
+                "usuario": "astro_lover"
+            }
+        ]
+    },
+    {
+        "_id": "#44",
+        "tipo": "course",
+        "dataCriacao": "2024-05-01",
+        "dataRegisto": "2024-06-23T14:45:00Z",
+        "visibilidade": "publico",
+        "tema": "art",
+        "titulo": "Introduction to Watercolor Painting",
+        "subtitulo": "Techniques and practice",
+        "autor": "Art Academy",
+        "comentarios": [
+            {
+                "usuario": "art_student",
+                "comentario": "A fantastic introduction to watercolor.",
+                "data":  "2024-05-10T11:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "creative_soul",
+                "comentario": "Great for beginners and advanced alike.",
+                "data":  "2024-05-15T13:30:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#44.zip",
+        "notificacoes": [
+            {
+                "usuario": "art_student"
+            },
+            {
+                "usuario": "creative_soul"
+            }
+        ]
+    },
+    {
+        "_id": "#45",
+        "tipo": "presentation",
+        "dataCriacao": "2023-10-10",
+        "dataRegisto": "2024-06-23T16:00:00Z",
+        "visibilidade": "publico",
+        "tema": "economics",
+        "titulo": "Global Trade Dynamics",
+        "subtitulo": "Current trends and future outlook",
+        "autor": "Economic Analysis Team",
+        "comentarios": [
+            {
+                "usuario": "trade_expert",
+                "comentario": "Comprehensive overview of trade issues.",
+                "data":  "2023-10-20T12:15:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "market_analyst",
+                "comentario": "Insightful and data-driven.",
+                "data":  "2023-10-25T14:30:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#45.zip",
+        "notificacoes": [
+            {
+                "usuario": "trade_expert"
+            },
+            {
+                "usuario": "market_analyst"
+            }
+        ]
+    },
+    {
+        "_id": "#46",
+        "tipo": "project",
+        "dataCriacao": "2023-04-15",
+        "dataRegisto": "2024-06-23T17:15:00Z",
+        "visibilidade": "publico",
+        "tema": "environment",
+        "titulo": "Urban Green Spaces",
+        "subtitulo": "Planning for sustainable cities",
+        "autor": "Green Urbanists",
+        "comentarios": [
+            {
+                "usuario": "city_planner",
+                "comentario": "A great example of sustainable planning.",
+                "data":  "2023-04-25T11:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "green_activist",
+                "comentario": "Important project for future cities.",
+                "data":  "2023-05-01T14:30:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#46.zip",
+        "notificacoes": [
+            {
+                "usuario": "city_planner"
+            },
+            {
+                "usuario": "green_activist"
+            }
+        ]
+    },    
+    {
+        "_id": "#47",
+        "tipo": "podcast",
+        "dataCriacao": "2024-03-14",
+        "dataRegisto": "2024-06-24T09:00:00Z",
+        "visibilidade": "publico",
+        "tema": "psychology",
+        "titulo": "Mind Matters",
+        "subtitulo": "Understanding mental health",
+        "autor": "Dr. Emily Clark",
+        "comentarios": [
+            {
+                "usuario": "mind_enthusiast",
+                "comentario": "Very enlightening episodes!",
+                "data":  "2024-04-01T10:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "mental_health_advocate",
+                "comentario": "Helped me a lot in understanding mental health.",
+                "data":  "2024-04-05T12:15:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#47.zip",
+        "notificacoes": [
+            {
+                "usuario": "mind_enthusiast"
+            },
+            {
+                "usuario": "mental_health_advocate"
+            }
+        ]
+    },
+    {
+        "_id": "#48",
+        "tipo": "thesis",
+        "dataCriacao": "2023-12-12",
+        "dataRegisto": "2024-06-24T10:30:00Z",
+        "visibilidade": "publico",
+        "tema": "technology",
+        "titulo": "The Impact of AI on Job Markets",
+        "subtitulo": "A study on future employment trends",
+        "autor": "Jane Thompson",
+        "comentarios": [
+            {
+                "usuario": "ai_researcher",
+                "comentario": "Excellent and timely research.",
+                "data":  "2024-01-15T11:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "tech_expert",
+                "comentario": "Provides great insights into future trends.",
+                "data":  "2024-01-20T14:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#48.zip",
+        "notificacoes": [
+            {
+                "usuario": "ai_researcher"
+            },
+            {
+                "usuario": "tech_expert"
+            }
+        ]
+    },
+    {
+        "_id": "#49",
+        "tipo": "ebook",
+        "dataCriacao": "2022-05-10",
+        "dataRegisto": "2024-06-24T11:45:00Z",
+        "visibilidade": "publico",
+        "tema": "science",
+        "titulo": "Quantum Physics for Beginners",
+        "subtitulo": "Understanding the fundamentals",
+        "autor": "Dr. Michael Brown",
+        "comentarios": [
+            {
+                "usuario": "science_lover",
+                "comentario": "Great introduction to a complex subject.",
+                "data":  "2022-06-01T10:30:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "quantum_enthusiast",
+                "comentario": "Explains difficult concepts very well.",
+                "data":  "2022-06-05T12:45:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#49.zip",
+        "notificacoes": [
+            {
+                "usuario": "science_lover"
+            },
+            {
+                "usuario": "quantum_enthusiast"
+            }
+        ]
+    },
+    {
+        "_id": "#50",
+        "tipo": "podcast",
+        "dataCriacao": "2024-02-20",
+        "dataRegisto": "2024-06-24T13:00:00Z",
+        "visibilidade": "publico",
+        "tema": "business",
+        "titulo": "Startup Stories",
+        "subtitulo": "Insights from successful entrepreneurs",
+        "autor": "Startup Guru",
+        "comentarios": [
+            {
+                "usuario": "entrepreneur",
+                "comentario": "Very motivating and insightful.",
+                "data":  "2024-03-05T09:30:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "biz_lover",
+                "comentario": "Great tips for starting a business.",
+                "data":  "2024-03-10T11:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#50.zip",
+        "notificacoes": [
+            {
+                "usuario": "entrepreneur"
+            },
+            {
+                "usuario": "biz_lover"
+            }
+        ]
+    },
+    {
+        "_id": "#51",
+        "tipo": "thesis",
+        "dataCriacao": "2023-11-01",
+        "dataRegisto": "2024-06-24T14:30:00Z",
+        "visibilidade": "private",
+        "tema": "environment",
+        "titulo": "Climate Change Impact on Agriculture",
+        "subtitulo": "Strategies for sustainable farming",
+        "autor": "David Green",
+        "comentarios": [
+            {
+                "usuario": "eco_friendly_farmer",
+                "comentario": "Invaluable research for the farming community.",
+                "data":  "2023-11-20T10:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 1
+        },
+        "pathRecurso": "#51.zip",
+        "notificacoes": [
+            {
+                "usuario": "eco_friendly_farmer"
+            }
+        ]
+    },
+    {
+        "_id": "#52",
+        "tipo": "ebook",
+        "dataCriacao": "2023-06-15",
+        "dataRegisto": "2024-06-24T16:00:00Z",
+        "visibilidade": "publico",
+        "tema": "technology",
+        "titulo": "The World of Blockchain",
+        "subtitulo": "A guide to blockchain technology",
+        "autor": "Tech Savvy",
+        "comentarios": [
+            {
+                "usuario": "tech_fan",
+                "comentario": "Comprehensive and easy to understand.",
+                "data":  "2023-07-01T11:30:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "blockchain_explorer",
+                "comentario": "Great resource for blockchain enthusiasts.",
+                "data":  "2023-07-05T14:00:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#52.zip",
+        "notificacoes": [
+            {
+                "usuario": "tech_fan"
+            },
+            {
+                "usuario": "blockchain_explorer"
+            }
+        ]
+    },
+    {
+        "_id": "#53",
+        "tipo": "podcast",
+        "dataCriacao": "2024-01-10",
+        "dataRegisto": "2024-06-24T17:30:00Z",
+        "visibilidade": "publico",
+        "tema": "education",
+        "titulo": "Learning Matters",
+        "subtitulo": "New trends in education",
+        "autor": "Edu Innovators",
+        "comentarios": [
+            {
+                "usuario": "edu_geek",
+                "comentario": "Very informative and current.",
+                "data":  "2024-01-25T09:00:00Z",
+                "classificacao":5.0
+                },
+            {
+                "usuario": "teacher_innovator",
+                "comentario": "Great insights into modern education.",
+                "data":  "2024-01-30T11:30:00Z",
+                "classificacao":5.0
+                }
+        ],
+        "ranking": {
+            "estrelas":5.0,
+            "numero_avaliacoes": 2
+        },
+        "pathRecurso": "#53.zip",
+        "notificacoes": [
+            {
+                "usuario": "edu_geek"
+            },
+            {
+                "usuario": "teacher_innovator"
+            }
+        ]
+    }
+]

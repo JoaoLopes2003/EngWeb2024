@@ -1,0 +1,37 @@
+extends layout
+
+block content
+    .w3-card-4
+        header.w3-container.w3-teal
+            h1 titulo
+            
+        .w3-container
+            br
+            form.w3-container(action=`/tiposRecursos/edit/${tipo._id}` method="POST")
+                fieldset.w3-cyan
+                    legend
+                        b Dados do Tipo de Recurso
+                    .tipo-data-row-1
+                        .resource-data-row
+                            label(for="nome") Nome:
+                            input.select-option-box(type="text", name="nome", id="nome", value=tipo._id, readonly)
+                    .row-of-resource-data
+                        .tipo-data-row-2
+                            label(for="ficheirosObrigatorios") Ficheiros Obrigatórios:
+                            .files-container
+                                ul.list-mandatory-files(id="mandatoryFilesList")
+                                    each f, index in tipo.mandatoryFiles
+                                        li.mandatory-file
+                                            input.select-option-box(type="text", name="mandatoryFiles[]" value=f)
+                                            button.button-edit-tipo-files(type="button") Remover
+                                button.button-add-tipo-files(type="button", id="addFileBtn") Adicionar Ficheiro
+
+                button.button-submit-tipo(type="submit") Salvar
+        br
+
+    footer.w3-container.w3-teal.w3-center
+        address Gerado por EngWeb2024 em #{data} - 
+            a(href='/recursos') [Voltar]
+
+block scripts
+    script(src="/javascripts/editTipoRecurso.js")

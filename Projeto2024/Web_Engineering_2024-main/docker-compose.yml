@@ -1,0 +1,26 @@
+
+version: '3.8'
+services:
+  recursos-web:
+    build:
+      context: ./server
+    ports:
+      - "15001:15001"
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    depends_on:
+      - mongo-seed
+  mongo-seed:
+    image: mongo:latest
+    volumes:
+      - ./data/recursos.json:/recursos.json
+      - ./data/users.json:/users.json
+      - ./data/tiposRecursos.json:/tiposRecursos.json
+    command: >
+      /bin/sh -c "mongoimport --host mongodb --db projeto --collection recursos --type json --file recursos.json --jsonArray &&
+      mongoimport --host mongodb --db projeto --collection users --type json --file users.json --jsonArray &&
+      mongoimport --host mongodb --db projeto --collection tiposRecursos --type json --file tiposRecursos.json --jsonArray"

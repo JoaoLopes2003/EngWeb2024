@@ -1,0 +1,66 @@
+extends layout
+
+block content
+  .w3-card-4
+    header.header-container.w3-teal
+      h1
+        = titulo
+      .resource-options-container
+        button.login-button(type="button" id="login-button") LOGIN
+        button.register-button(type="button" id="register-button") REGISTO
+
+    img.img-login(src="/images/onlineLibrary.png" alt="Library")
+
+    //- Login modal overlay
+    .overlay-login(id="loginOverlay")
+      .overlay-login-content.w3-card-4
+        .titulo-login Login
+        form.form-login(action="/users/login" method="POST" id="loginForm")
+          .user-login-info
+            .form-login-field
+              label(for="username") Username:
+              input.form-login-input(type="text" name="username" id="username" required)
+            .form-login-field
+              label(for="password") Password:
+              input.form-login-input(type="password" name="password" id="password" required)
+          .form-login-buttons
+            button.confirm-login-button(type="submit" id="confirmLogin") Confirmar
+            button.cancel-login-button(type="button" id="closeOverlay") Cancelar
+    
+    //- Register modal overlay
+    .overlay-register(id="registerOverlay")
+      .overlay-register-content.w3-card-4
+        .titulo-register Registo
+        form.form-register(action="/users/registar" method="POST" id="registerForm")
+          .user-register-info
+            .form-register-field
+              label(for="username") Username:
+              input.form-register-input(type="text" name="username" id="username-register" required)
+            .form-register-field
+              label(for="name") Nome:
+              input.form-register-input(type="text" name="name" id="name" required)
+            .form-register-field
+              label(for="email") Email:
+              input.form-register-input(type="email" name="email" id="email" required)
+            .form-register-field
+              label(for="role") Cargo:
+              select.form-register-input(name="role" id="role" required)
+                option(value="user") Utilizador
+                option(value="admin") Administrador
+            .form-register-field
+              label(for="password") Password:
+              input.form-register-input(type="password" name="password" id="password-register" required)
+            .form-register-field
+              label(for="confirmPassword") Confirmar Password:
+              input.form-register-input(type="password" name="confirmPassword" id="confirmPassword-register" required)
+          .form-register-buttons
+            button.confirm-register-button(type="submit" id="confirmRegister") Confirmar
+            button.cancel-register-button(type="button" id="closeRegisterOverlay") Cancelar
+    br
+
+    footer.w3-container.w3-teal.w3-center
+      address Gerado por EngWeb2024 em #{data}
+
+block scripts
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js")
+  script(src="/javascripts/login.js")

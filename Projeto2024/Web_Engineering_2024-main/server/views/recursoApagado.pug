@@ -1,0 +1,67 @@
+extends layout
+
+block content
+  .w3-card-4
+    header.header-container.w3-teal
+      h1 #{titulo} - #{recurso._id}
+      .resource-options-container
+        a(href='/recursos') Voltar
+    br
+    .recurso-container
+        .info-recurso-container.w3-cyan.w3-card-4
+            .w3-container.w3-white.titulo-info-recurso
+                h2 Informações
+            table.w3-table-all
+                tr
+                    td Id:
+                    td #{recurso._id}
+                tr
+                    td Tipo:
+                    td #{recurso.tipo}
+                tr
+                    td Tema:
+                    td #{recurso.tema}
+                tr
+                    td Subtítulo:
+                    td #{recurso.subtitulo}
+                tr
+                    td Autor:
+                    td #{recurso.autor}
+                tr
+                    td Data de Criação:
+                    td= new Date(recurso.dataCriacao).toLocaleString('pt-PT', { year: 'numeric', month: '2-digit', day: '2-digit'})
+                tr
+                    td Data de Adição:
+                    td= new Date(recurso.dataRegisto).toLocaleString('pt-PT', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
+                tr
+                    td Visibilidade:
+                    td #{recurso.visibilidade}
+                tr
+                    td Classificação (0-5):
+                    if recurso.ranking.numero_avaliacoes == 0
+                        td Ainda não tem classificações
+                    else
+                        td= recurso.ranking.estrelas.toFixed(1)
+                tr
+                    td Número de Classificações:
+                    td #{recurso.ranking.numero_avaliacoes}
+        .comentarios-container-1
+            .comentarios-container-6.w3-card-4.w3-cyan
+                .titulo-comenatarios-text Comentários
+            .comentarios-container-5
+                each c in recurso.comentarios
+                    .comentarios-container-4.w3-card-4
+                        .info-user
+                            .info-user-left
+                                .nome-user-comentario #{c.usuario}
+                                - if (c.data instanceof Date)
+                                    .data-comentario= c.data.toISOString().slice(0, 16).replace("T", " ")
+                            .info-user-right
+                                | Classificação:
+                                .classificacao-comentario #{c.classificacao}
+                        .comentario-text-container #{c.comentario}
+    br
+
+    footer.w3-container.w3-teal.w3-center
+      address Gerado por EngWeb2024 em #{data} - 
+        a(href='/recursos') [Voltar]

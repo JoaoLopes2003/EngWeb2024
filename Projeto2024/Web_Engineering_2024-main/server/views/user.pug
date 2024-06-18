@@ -1,0 +1,79 @@
+extends layout
+
+block content
+  .w3-card-4
+    header.header-container.w3-teal
+      h1 #{titulo}
+      .nav-bar-container
+        .resource-options-container
+        a(href='/users/edit/' + username) [Editar]
+        .vertical-line-2
+        a.texto-nav-bar(href='/home') Home
+        .vertical-line-2
+        a.texto-nav-bar(href='/users/logout') Logout
+    br
+    .recurso-container
+        .info-recurso-container.w3-cyan.w3-card-4
+            .w3-container.w3-white.titulo-info-recurso
+                h2 Informações
+            table.w3-table-all
+                tr
+                    td Id:
+                    td #{user._id}
+                tr
+                    td Nome:
+                    td #{user.nome}
+                tr
+                    td Email:
+                    td #{user.email}
+                tr
+                    td Cargo:
+                    td #{user.cargo}
+                tr
+                    td Data de Registo:
+                    td #{user.dataRegisto}
+                tr
+                    td Password:
+                    td ********
+                
+        .user-resources-container.w3-cyan
+            .titulo-recursos-user-text
+                h2 Recursos Associados
+            table.w3-table-all.table-resources-user
+                tr
+                    th Id
+                    th Tipo
+                    th Tema
+                    th Titulo
+                    th Subtítulo
+                    th dataCriacao
+                    th dataRegisto
+                    th ranking
+                    th Ações
+                if (recursos.length > 0)
+                    each r in recursos
+                        tr
+                        td
+                            a(href=`/recursos/${r._id.replace('#', '%23')}`)= r._id
+                        td
+                            a(href='/recursos/' + r.tipo)= r.tipo
+                        td= r.tema
+                        td= r.titulo
+                        td= r.subtitulo
+                        td= new Date(r.dataCriacao).toLocaleString('pt-PT', { year: 'numeric', month: '2-digit', day: '2-digit'})
+                        td= new Date(r.dataRegisto).toLocaleString('pt-PT', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
+                        if r.ranking.numero_avaliacoes == 0
+                            td Não avaliado
+                        else
+                            td= r.ranking.estrelas.toFixed(1)
+                        td
+                            a(href=`/recursos/edit/${r._id.replace('#', '%23')}`) [Editar]
+                            a(href=`/recursos/delete/${r._id.replace('#', '%23')}`) [Apagar]
+                else
+                    tr
+                        td(colspan="9" style="text-align: center; vertical-align: middle;") Ainda não existem recursos associados a este utilizador.
+    br
+
+    footer.w3-container.w3-teal.w3-center
+      address Gerado por EngWeb2024 em #{data} - 
+        a(href='/home') [Voltar]
